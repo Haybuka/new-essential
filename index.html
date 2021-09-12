@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essenx</title>
+    <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/index.css">
+  <style>
+      header{
+          background-color: #8B8B8B87;
+      }
+      nav .account a{
+          display:flex ;
+          justify-content: space-between;
+          align-items: center;
+      }
+      nav .account span{
+          margin: 0 5px;
+      }
+      nav.container{
+          padding: 0px 50px;
+      }
+  </style>
+</head>
+<body>
+    <div class="shownav"></div>
+    <header >
+        <nav class="container"> 
+           <div class="logo">
+               <img src="/assets/images/logo.svg" alt=" ">
+           </div>
+           <div class="harmburger">
+               <span></span><span></span><span></span>
+           </div>
+           <ul class="nav-list">
+            <li class="close-burger">
+                <span></span>
+                <span></span>
+            </li>
+               <li><a href="/assets/pages/home.html">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="/assets/pages/products.html">Store</a></li>
+               <li><a href="/assets/pages/explore.html">Contact Us</a></li>
+               <li class="account"><a href="#">
+                   <span>
+                     <img src="/assets/images/profile-img/account-icon.svg" alt="">
+                   </span>
+                   <span>
+                       Account
+                   </span>
+                   </a>
+                </li>
+                <li>
+                    <a href="/assets/pages/explore.html">
+                    <img src="/assets/images/cart-icon.svg" alt="">
+                    </a>
+                </li>
+           </ul>
+        </nav>
+    </header>
+    <div class="body">
+        <main data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="800">
+            <h1 class="display-one">
+               <span> Explore the peak of </span>
+               <span>African Agriculture</span>
+            </h1>
+        </main>
+        <footer>
+            <p>copyright &copy; My Essential Foods</p>
+            <p class="small">All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        let harmburger = document.querySelector('.harmburger');
+        let closeburger = document.querySelector('.close-burger');
+        let navCover = document.querySelector('.shownav');
+        let navList = document.querySelector('.nav-list');
+        harmburger.addEventListener('click',()=>{
+        navCover.classList.toggle('show');
+         setTimeout(() => {
+            navList.classList.toggle('view');
+         }, 600);
+        })
+        closeburger.addEventListener('click',()=>{
+            navCover.classList.toggle('show')
+            navList.classList.toggle('view')
+        })
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essential Foods">
+    <meta name="keywords" content="food,food store">
+    <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
+    <!-- Google Font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/indexHome.css"> -->
+    <title>Essential Foods</title>
+    <link rel="stylesheet" href="/assets/styles/home.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                 <img src="/assets/images/logo.svg" alt="">
+            </div>
+            <div class="navbar-nav">
+              <ul>
+                  <li>
+                      <a href="#">Home</a>
+                  </li>
+                  <li>
+                      <a href="#">About Us</a>
+                  </li>
+                  <li>
+                      <a href="#">Store</a>
+                  </li>
+                  <li>
+                      <a href="#">Contact Us</a>
+                  </li>
+                  <li class="account"><a href="#">
+                    <div>
+                      <img src="/assets/images/profile-img/account-icon.svg" alt="">
+                    </div>
+                    <span>
+                        Account
+                    </span>
+                    </a>
+                 </li>
+                 <li>
+                     <a href="#" class="nav-cart">
+                         <img src="/assets/images/nav-cart.svg" alt="">
+                     </a>
+                 </li>
+              </ul>
+            </div>
+            <div class="nav-toggle">
+                <!-- <img src="/assets/image/logo/harmburger.svg" alt=""> -->
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="banner container">
+        <article>
+          <h1>
+              <span>
+                Introduce Your
+              </span>
+              <span>
+                Taste Buds to
+              </span>
+              <span>
+                Culture
+              </span>
+          </h1>
+          <a href="#" class="btn btn-explore">
+              Explore
+          </a>
+        </article>
+        <aside>
+           <img src="/assets/images/products/yam flour.png" alt="">
+        </aside>
+    </section>
+    <main>
+        <section class="video-play">
+            <div>
+                <h3>From a complete natural source</h3>
+                <p>
+                    Our products are completely natural and directly form the farm.
+                </p>
+            </div>
+            <div class="video">
+                <img src="/assets/images/play-img.svg" alt="" class="play-btn">
+                <!-- <img src="/assets/images/video-placeholder.png" alt=""> -->
+
+            </div>
+        </section>
+    </main>
+
+
+<script>
+    let harmburger = document.querySelector('.nav-toggle');
+     let body = document.querySelector('body');
+
+harmburger.addEventListener('click',function(){
+    let navbarNav = document.querySelector('.navbar-nav');
+    let imgSrc = this.querySelector('img');
+
+    //toggle show classes for elements
+    body.classList.toggle('toggle')
+    navbarNav.classList.toggle('show')
+    
+   
+})
+</script>
+</body>
+</html>
