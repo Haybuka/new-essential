@@ -116,12 +116,12 @@ nav .logo img{
 .video-play div{
     margin: 20px 0;
 }
-.video-play h3{
+.h3-display{
     font-size: 25px;
     text-align: center;
     margin: 10px 0;
 }
-.video-play p{
+.desc-words{
     text-align: center;
     font-size: 18px;
     color: #999999;
@@ -180,7 +180,12 @@ nav .logo img{
     border-bottom:  1px solid #EE6624;
   
 }
-
+.about-ess{
+    text-align: center;
+}
+.about-ess p{
+    font-size: 15px;
+}
 @media screen and (max-width:1160px){
     .banner h1{
         font-size: 50px;
@@ -282,11 +287,11 @@ nav .logo img{
     .banner h1{
         font-size: 30px;
     }
-    .video-play h3{
+    .h3-display{
         font-size: 20px;
         line-height: 18px;
     }
-    .video-play p{
+    .desc-words{
         font-size: 14px;
         line-height: 15px;
     }
