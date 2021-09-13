@@ -198,7 +198,7 @@ nav .logo img{
         text-align: center;
     }
     .banner aside img{
-        transform: scale(1);
+        /* transform: scale(1); */
         height: 100%;
     }
 }
