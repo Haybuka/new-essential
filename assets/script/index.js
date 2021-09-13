@@ -1,60 +1,23 @@
 
-let harmburger = document.querySelector('.harmburger');
-let navAlt = document.querySelector('.nav-alt');
 let asides = [...document.querySelectorAll('.slide-aside')]
-let centerSlide = [...document.querySelectorAll('.center-slide')]
+let harmburger = document.querySelector('.nav-toggle');
+     let body = document.querySelector('body');
+
+harmburger.addEventListener('click',function(){
+    let navbarNav = document.querySelector('.navbar-nav');
+    let imgSrc = this.querySelector('img');
+
+    //toggle show classes for elements
+    body.classList.toggle('toggle')
+    navbarNav.classList.toggle('show')
+    
+   
+})
 
 harmburger.addEventListener('click',()=>{
   navAlt.classList.toggle('slide-left');
   harmburger.classList.toggle('roll')
 })
-if(centerSlide.length < 2){
-  $('.center').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 1,
-    arrows:false,
-    autoplay:true
-  })
-} else if(centerSlide.length < 3){
-  $('.center').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 2,
-    arrows:false,
-    autoplay:true
-  })
-} else{
-  $('.center').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    arrows:false,
-    autoplay:true,
-    responsive: [
-    {
-        breakpoint: 1240,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '20px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2,
-          autoplaySpeed:2000
-        }
-      }
-    ]
-  });
-}
-
 
 if (asides.length < 2) {
    
@@ -62,7 +25,7 @@ if (asides.length < 2) {
      centerMode: true,
      centerPadding: '60px',
      slidesToShow: 1,
-     arrows:true,
+     arrows:false,
      autoplay:false,
      });
 }else{
@@ -70,13 +33,13 @@ if (asides.length < 2) {
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 2,
-    arrows:true,
+    arrows:false,
     autoplay:false,
     responsive: [
     {
         breakpoint: 1240,
         settings: {
-          arrows: true,
+          arrows: false,
           centerMode: true,
           centerPadding: '20px',
           slidesToShow: 2
@@ -85,7 +48,7 @@ if (asides.length < 2) {
       {
         breakpoint: 1080,
         settings: {
-          arrows: true,
+          arrows: false,
           centerMode: true,
           centerPadding: '10px',
           slidesToShow: 2,
@@ -95,7 +58,7 @@ if (asides.length < 2) {
       {
         breakpoint: 1060,
         settings: {
-          arrows: true,
+          arrows: false,
           centerMode: true,
           centerPadding: '0px',
           slidesToShow: 1,
@@ -106,7 +69,7 @@ if (asides.length < 2) {
       {
         breakpoint: 730,
         settings: {
-          arrows: true,
+          arrows: false,
           centerMode: true,
           centerPadding: '0px',
           slidesToShow: 1,
