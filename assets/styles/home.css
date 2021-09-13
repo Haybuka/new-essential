@@ -179,6 +179,7 @@ nav .logo img{
     margin: 10px 0;
     /* border-bottom:  1px solid #EE6624; */
    position: relative;
+   overflow-x: hidden;
 }
 .shop-btn::after{
     transform: translate(8%);
