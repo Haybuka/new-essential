@@ -12,16 +12,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
     
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/indexHome.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/assets/styles/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Essential Foods</title>
     <link rel="stylesheet" href="/assets/styles/home.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
+    <header class="" >
+        <nav class="container" data-aos="fade-down" data-aos-easing="linear">
             <div class="logo">
                  <img src="/assets/images/logo.svg" alt="">
             </div>
@@ -31,10 +32,10 @@
                       <a href="#">Home</a>
                   </li>
                   <li>
-                      <a href="#">About Us</a>
+                      <a href="#">Store</a>
                   </li>
                   <li>
-                      <a href="#">Store</a>
+                      <a href="#">About Us</a>
                   </li>
                   <li>
                       <a href="#">Contact Us</a>
@@ -62,7 +63,7 @@
         </nav>
     </header>
     <section class="banner container">
-        <article>
+        <article data-aos="fade-left" data-aos-easing="linear">
           <h1>
               <span>
                 Introduce Your
@@ -78,30 +79,30 @@
               Explore
           </a>
         </article>
-        <aside>
+        <aside data-aos="fade-right" data-aos-easing="linear">
            <img src="/assets/images/products/yam flour.png" alt="">
         </aside>
     </section>
     <main class="container">
         <section class="video-play">
-            <div>
+            <div data-aos="fade-up" data-aos-easing="linear">
                 <h3 class="h3-display">From a complete natural source</h3>
                 <p class="desc-words">
                     Our products are completely natural and directly form the farm.
                 </p>
             </div>
-            <div class="video">
+            <div class="video" data-aos="fade-down" data-aos-easing="linear">
                 <img src="/assets/images/play-img.svg" alt="" class="play-btn">
             </div>
         </section>
         <section class="grid">
-            <div class="first-grid">
+            <div class="first-grid" data-aos="fade-down" data-aos-easing="linear">
                  <img src="/assets/images/home-grid/creekers-tin.png" alt="">
             </div>
-            <div class="second-grid">
+            <div class="second-grid" data-aos="fade-up" data-aos-easing="linear">
                 <img src="/assets/images/home-grid/Snack.png" alt="">
             </div>
-            <div class="third-grid">
+            <div class="third-grid" data-aos="fade-up" data-aos-easing="linear">
                <img src="/assets/images/home-grid/beans.png" alt="">
             </div>
         </section>
@@ -110,7 +111,7 @@
                 Shop
             </a>
         </div>
-        <section class="about-ess">
+        <section class="about-ess" data-aos="zoom-out" data-aos-easing="linear">
             <article>
                 <h3>About Essentials</h3>
                 <p class="desc-words">
@@ -119,7 +120,7 @@
             </article>
         </section>     
     </main>
-    <div class="shop-btn">
+    <div class="shop-btn" data-aos="fade-up" data-aos-easing="linear">
         <aside>
             
         </aside>
@@ -206,6 +207,8 @@
               </div>
            </aside>
         </div>
+       <!-- <img src="/assets/images/profile-img/chevron-right.png" alt="" class="chevron-right">
+         <img src="/assets/images/profile-img/chevron-left.png" alt="" class="chevron-left"> -->
    </section>
    <footer data-aos="fade-up" data-aos-easing="linear">
     <section class="footer-top">
@@ -217,14 +220,14 @@
           <a href="/index.html">Home</a>
         </li> 
         <li>
-         <a href="#">About Us</a>
+         <a href="#">Store</a>
         </li>
         <li>
-         <a href="/assets/pages/products.html">Our Products</a>
+         <a href="/assets/pages/products.html">About Us</a>
         </li>
-        <li>
+        <!-- <li>
          <a href="/assets/pages/explore.html">Explore Creekers</a>
-        </li>
+        </li> -->
         <li>
          <a href="#">Contact Us</a>
         </li>
@@ -232,7 +235,7 @@
     </section>
     <div class="copy-right">
       <small>
-        copyright &copy; my essential foods
+        copyright &copy; 2021 my essential foods
       </small>
       <ul class="footer-social">
        <li>
@@ -259,6 +262,7 @@
     </div>
 </footer>
 <script src="/assets/script/jquery.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/assets/script/slick.js"></script>
 <script src="/assets/script/index.js"></script>
 </body>
