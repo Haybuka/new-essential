@@ -84,5 +84,5 @@ if (asides.length < 2) {
 
 
 
-// AOS.init();
+AOS.init();
 console.clear()
