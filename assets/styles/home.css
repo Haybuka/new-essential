@@ -432,6 +432,9 @@ footer a{
 .footer-links li{
     margin: 15px 0;
 }
+.about-banner h1{
+    font-size: 40px;
+}
 }
 
 @media screen and (max-width:600px){

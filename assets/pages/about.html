@@ -19,10 +19,35 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Essential Foods</title>
     <link rel="stylesheet" href="/assets/styles/home.css">
+    <style>
+         section .h3-display, .desc-words{
+            text-align: left;
+            margin: 20px 0;
+        }
+        .about-banner{
+            height: 400px;
+            background: url('/assets/images/about/about-banner.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .about-banner h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 70px;
+            color: #fff;
+        }
+        .shop-btn{
+            margin: 30px 0;
+        }
+    </style>
 </head>
 <body>
     <header class="" >
-        <nav class="container" data-aos="fade-down" data-aos-easing="linear">
+        <nav class="container" >
             <div class="logo">
                  <img src="/assets/images/logo.svg" alt="">
             </div>
@@ -62,8 +87,34 @@
             </div>
         </nav>
     </header>
-    
-   <footer data-aos="fade-up" data-aos-easing="linear">
+    <main>
+       <section class="about-banner">
+            <h1>
+                About Us
+            </h1>
+       </section>
+       <section class="container">
+            <h3 class="h3-display">
+                We are an online food-mart
+            </h3>
+            <p class="desc-words">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat, ante id  lobortis, 
+                odio risus finibus tortor, at tincidunt nunc ante ut orci. Etiam sit amet dui lacus.
+                 Quisque ornare, est sit amet ullamcorper venenatis, felis eros interdum enim, ut vestibulum elit diam sed est. 
+                In auctor dui nec ante ultrices, et euismod odio varius. Aliquam vitae eros nec ante volutpat facilisis. Morbi sem purus,
+                 tempor vitae rutrum id, tincidunt nec tellus. Donec finibus, nunc eget efficitur ornare, sem libero consequat velit, vel rutrum turpis lorem et erat. Integer augue sem, bibendum at venenatis ut, sagittis ut turpis. Nam euismod semper tellus a condimentum. Quisque sed lorem vel nisl finibus mattis ac quis est. Fusce placerat nisl id risus hendrerit varius. Mauris non maximus quam, in lobortis massa. Aenean at felis nisi. Donec neque velit, aliquam non sem ac, lobortis.
+            </p>
+       </section>
+    </main>
+    <div class="shop-btn" >
+        <aside>
+            
+        </aside>
+        <!-- <a href="#" class="btn btn-explore">
+            Explore
+        </a> -->
+    </div>
+   <footer >
     <section class="footer-top">
      <div class="footer-logo">
        <img src="/assets/images/footer-logo.png" alt="">
