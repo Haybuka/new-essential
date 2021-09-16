@@ -516,5 +516,9 @@ footer a{
     footer{
         padding: 20px 5px;
     }
+    .contain{
+        width: auto;
+        box-shadow: none;
+    }
 }
 
