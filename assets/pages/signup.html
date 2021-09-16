@@ -37,7 +37,7 @@
                       <a href="/assets/pages/store.html">Store</a>
                   </li>
                   <li>
-                      <a href="#">About Us</a>
+                      <a href="/assets/pages/about.html">About Us</a>
                   </li>
                   <li>
                       <a href="#">Contact Us</a>
@@ -67,28 +67,33 @@
     <main class="contain" data-aos="fade-up" data-aos-easing="linear">
      
             <form class="form" id="form">
-                <h2>Register with us</h2>
+                <h2>Sign Up</h2>
                 <div class="form-control">
-                    <label for="username"> Username</label>
-                    <input type="text" name="username" id="username" placeholder="Enter username">
+                    <label for="firstname"> </label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
                     <small>Error Mesage</small>
                 </div>
                 <div class="form-control">
-                    <label for="email"> Username</label>
-                    <input type="test" name="email" id="email" placeholder="Enter email">
+                    <label for="lastname"> </label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
                     <small>Error Mesage</small>
                 </div>
                 <div class="form-control">
-                    <label for="password"> password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                    <label for="email"> </label>
+                    <input type="test" name="email" id="email" placeholder="Email">
                     <small>Error Mesage</small>
                 </div>
                 <div class="form-control">
-                    <label for="password2">Confirm password</label>
+                    <label for="password"> </label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <small>Error Mesage</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2"> </label>
                     <input type="password" name="password" id="password2" placeholder="Confirm Password">
                     <small>Error Mesage</small>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit">Create Account</button>
             </form>
  
     </main>
@@ -146,7 +151,8 @@
 <!-- <script src="/assets/script/index.js"></script> -->
 <script>
     const form = document.getElementById('form');
-const username = document.getElementById('username');
+const firstname = document.getElementById('firstname');
+const lastname = document.getElementById('lastname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
@@ -210,7 +216,7 @@ form.addEventListener('click',function (e) {
     e.preventDefault();
     // instead of passing input one after the other,pass in an Array,
     // to automate the task at once
-    checkRequired([username,email,password,password2])
+    checkRequired([firstname,lastname,email,password,password2])
 })
     AOS.init();
 </script>
