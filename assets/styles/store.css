@@ -1,3 +1,29 @@
+.search-item{
+    width: 500px;
+
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-item input{
+    padding: 10px 15px;
+    background-color: #C4C4C4;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+}
+.search-item div{
+    width: 9%;
+    background-color: #C4C4C4;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+.search-item img{
+    width: 100%;
+    border-radius: 10px;
+}
 .store-slide{
    display: flex;
    justify-content: space-between;
@@ -7,12 +33,10 @@
 .store-div{
     width: 250px !important; 
     height: 250px !important;
-     /* margin: 0 auto; */
 }
 .store-div img{
     width: 100%;
     border-radius: 10px;
-    /* margin: 0 20px; */
 }
 .slick-dots{
     display: flex;
@@ -29,6 +53,7 @@
 }
 ul{
     width: 900px;
+    transition: all 0.2s ease-in;
     margin: 0 auto;
 }
 .store-li{
@@ -36,6 +61,8 @@ ul{
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    margin: 15px 0;
+    border-radius: 10px;
     align-items: center;
 }
 .li-main-div{
@@ -83,11 +110,17 @@ ul{
     color: #fff;
     padding: 10px 15px;
     display: inline-block;
+    border-radius: 10px;
 }
 .purchase-div{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media screen and (max-width:930px){
+    ul{
+        width: 500px;
+    }
 }
 @media screen and (max-width:542px){
 .store-slide{
@@ -99,3 +132,34 @@ ul{
      margin: 0 20px !important;
 } 
 }
+@media screen and (max-width:542px){
+    ul{
+        width: auto;
+        padding: 10px;
+      }
+      .search-item{
+          width: auto;
+          padding: 10px;
+      }
+      .search-item div{
+          width: 10%;
+          padding: 8px 10px;
+          margin: 0 3px;
+      }
+      .rating{
+          width: 15px;
+          height: 15px;
+      }
+      .li-main-div p{
+          font-size: 14px;
+      }
+      .buy{
+          padding: 5px 10px;
+      }
+      .li-main-div article div{
+          margin: 0;
+      }
+      .store-li{
+          padding: 10px;
+      }
+    }
