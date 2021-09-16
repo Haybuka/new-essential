@@ -27,6 +27,9 @@ h2{
     margin-bottom: 10px 20px;
     position: relative;
 }
+.form-control.error{
+    margin-bottom: 15px;
+}
 .form-control label{
     color: #777;
     display: block;
