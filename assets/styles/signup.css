@@ -13,6 +13,7 @@
     /* box-shadow: 0 2px 10px rgba(0,0,0,0.3); */
     width: 400px;
     margin: 30px auto;
+    margin-bottom: 10px;
 }
 h2{
     text-align: center;
@@ -70,4 +71,13 @@ h2{
     font-size: 16px;
     margin-top: 20px;
     width: 100%;
+}
+main+div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+main +div a{
+   text-decoration: none;
+   color: #167EE6;
+    font-size: 15px;
 }
