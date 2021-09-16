@@ -67,17 +67,8 @@
     <main class="contain" data-aos="fade-up" data-aos-easing="linear">
      
             <form class="form" id="form">
-                <h2>Sign Up</h2>
-                <div class="form-control">
-                    <label for="firstname"> </label>
-                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
-                    <small>Error Mesage</small>
-                </div>
-                <div class="form-control">
-                    <label for="lastname"> </label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
-                    <small>Error Mesage</small>
-                </div>
+                <h2>Log In</h2>
+               
                 <div class="form-control">
                     <label for="email"> </label>
                     <input type="test" name="email" id="email" placeholder="Email">
@@ -88,26 +79,25 @@
                     <input type="password" name="password" id="password" placeholder="Password">
                     <small>Error Mesage</small>
                 </div>
-                <div class="form-control">
-                    <label for="password2"> </label>
-                    <input type="password" name="password" id="password2" placeholder="Confirm Password">
-                    <small>Error Mesage</small>
-                </div>
+               
                 <button type="submit">Create Account</button>
             </form>
  
     </main>
     <div>
         <p>
-             <span>Already Have an Account?</span>
-             <span><a href="/assets/pages/login.html">Log in</a></span>
+             <span>Create Account?</span>
+             <span><a href="/assets/pages/signup.html">Signup</a></span>
         </p>
-       
+        <p>
+         
+            <span><a href="#">Forgot Password</a></span>
+       </p>
     </div>
    <footer >
     <section class="footer-top">
      <div class="footer-logo">
-       <img src="/assets/images/footer-logo.png" alt="">
+       <img src="#" alt="">
      </div>
      <ul class="footer-links">
         <li>
@@ -157,11 +147,8 @@
 <!-- <script src="/assets/script/index.js"></script> -->
 <script>
     const form = document.getElementById('form');
-const firstname = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
 let asides = [...document.querySelectorAll('.slide-aside')]
 let harmburger = document.querySelector('.nav-toggle');
      let body = document.querySelector('body');
@@ -222,7 +209,7 @@ form.addEventListener('click',function (e) {
     e.preventDefault();
     // instead of passing input one after the other,pass in an Array,
     // to automate the task at once
-    checkRequired([firstname,lastname,email,password,password2])
+    checkRequired([email,password])
 })
     AOS.init();
 </script>
