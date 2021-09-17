@@ -19,7 +19,18 @@
     <title>Essential Foods</title>
     <link rel="stylesheet" href="/assets/styles/signup.css">
     <link rel="stylesheet" href="/assets/styles/home.css">
-
+    <style>
+        form{
+            width: 400px;
+        }
+        textarea{
+            width: 100%;
+        }
+        h3{
+            font-weight: inherit;
+            font-size: 16px;
+        }
+    </style>
     
 </head>
 <body>
@@ -40,7 +51,7 @@
                       <a href="/assets/pages/about.html">About Us</a>
                   </li>
                   <li>
-                      <a href="/assets/pages/contact.html">Contact Us</a>
+                      <a href="#">Contact Us</a>
                   </li>
                   <li class="account"><a href="#">
                     <div>
@@ -59,43 +70,36 @@
               </ul>
             </div>
             <div class="nav-toggle">
-                <!-- <img src="/assets/image/logo/harmburger.svg" alt=""> -->
                 <span></span><span></span><span></span>
             </div>
         </nav>
     </header>
-    <main class="contain" data-aos="fade-up" data-aos-easing="linear">
-     
-            <form class="form" id="form">
-                <h2>Sign Up</h2>
-                <div class="form-control">
-                    <label for="firstname"> </label>
-                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
-                    <small>Error Mesage</small>
-                </div>
-                <div class="form-control">
-                    <label for="lastname"> </label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
-                    <small>Error Mesage</small>
-                </div>
-                <div class="form-control">
-                    <label for="email"> </label>
-                    <input type="test" name="email" id="email" placeholder="Email">
-                    <small>Error Mesage</small>
-                </div>
-                <div class="form-control">
-                    <label for="password"> </label>
-                    <input type="password" name="password" id="password" placeholder="Password">
-                    <small>Error Mesage</small>
-                </div>
-                <div class="form-control">
-                    <label for="password2"> </label>
-                    <input type="password" name="password" id="password2" placeholder="Confirm Password">
-                    <small>Error Mesage</small>
-                </div>
-                <button type="submit">Create Account</button>
-            </form>
- 
+    <h2>Get in Touch</h2>
+    <main>
+       <section>
+        <form class="form" id="form">
+            <h3>Leave us a message</h3>
+            <div class="form-control">
+                <label for="Name"> </label>
+                <input type="text" name="Name" id="Name" placeholder="Name">
+                <small>Error Mesage</small>
+            </div>
+            <div class="form-control">
+                <label for="email"> </label>
+                <input type="test" name="email" id="email" placeholder="Email Address">
+                <small>Error Mesage</small>
+            </div>
+            <div class="form-control">
+                <label for="text"> </label>
+                <textarea name="textarea" id="text" cols="30" rows="10"></textarea>
+                <small>Error Mesage</small>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+       </section>
+      <section>
+
+      </section>
     </main>
     <div>
         <p>
@@ -120,7 +124,7 @@
          <a href="/assets/pages/about.html">About Us</a>
         </li>
         <li>
-         <a href="/assets/pages/contact.html">Contact Us</a>
+         <a href="#">Contact Us</a>
         </li>
      </ul>
     </section>
@@ -157,11 +161,9 @@
 <!-- <script src="/assets/script/index.js"></script> -->
 <script>
     const form = document.getElementById('form');
-const firstname = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
+const name = document.getElementById('Name');
 const email = document.getElementById('email');
-const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
+const text = document.getElementById('text');
 let asides = [...document.querySelectorAll('.slide-aside')]
 let harmburger = document.querySelector('.nav-toggle');
      let body = document.querySelector('body');
@@ -222,9 +224,9 @@ form.addEventListener('click',function (e) {
     e.preventDefault();
     // instead of passing input one after the other,pass in an Array,
     // to automate the task at once
-    checkRequired([firstname,lastname,email,password,password2])
+    checkRequired([name,email,text])
 })
-    AOS.init();
+    // AOS.init();
 </script>
 </body>
 </html>
