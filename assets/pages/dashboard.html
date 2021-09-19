@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essential Foods">
+    <meta name="keywords" content="food,food store">
+    <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
+    <!-- Google Font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+     -->
+    <!-- 
+    <link rel="stylesheet" href="/assets/styles/indexHome.css"> -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+    <!-- <link rel="stylesheet" href="/assets/styles/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <title>Essential Foods</title>
+    <link rel="stylesheet" href="/assets/styles/home.css">
+    <style>
+        main{
+            margin: 30px 0;
+        }
+        main > h3{
+            font-size: 45px;
+            font-weight: 700;
+            text-align: center;
+        }
+        main ul{
+            width: 700px;
+            margin: 10px auto;
+            border: 1px solid#F2F2F2;
+            background-color: #E5E5E5;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        main li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #c4c4c4;
+            padding: 20px 15px;
+            width: 100%;
+        }
+        main li .detail-item{
+            text-align: center;
+            margin: 0 15px;
+        }
+        
+    main li p{
+        font-size: 14px;
+    }
+    main li span{
+        font-size: 12px;
+    }
+    .track-order p {
+       position: relative;
+       text-align: center;
+       margin: 30px 0;
+    }
+    .track-order p::after{
+        content: url('/assets/images/dashboard/chevron-down.png');
+        position: absolute;
+        /* right:0 ; */
+        transform: translateX(-15px);
+        top: 0;
+        width: 5%;
+        height: 100%;
+        display: inline-block;
+    }
+    .track-progress{
+        width: 800px;
+    }
+    .track-progress progress{
+        width: 100%;
+    }
+    .progress-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <header class="" data-aos="fade-down" data-aos-easing="linear">
+        <nav class="container" >
+            <div class="logo">
+                 <img src="/assets/images/logo.svg" alt="">
+            </div>
+            <div class="navbar-nav">
+              <ul>
+                  <li>
+                      <a href="/assets/pages/home.html">Home</a>
+                  </li>
+                  <li>
+                      <a href="#">Store</a>
+                  </li>
+                  <li>
+                      <a href="/assets/pages/about.html">About Us</a>
+                  </li>
+                  <li>
+                      <a href="/assets/pages/contact.html">Contact Us</a>
+                  </li>
+                  <li class="account"><a href="/assets/pages/signup.html">
+                    <div>
+                      <img src="/assets/images/profile-img/account-icon.svg" alt="">
+                    </div>
+                    <span>
+                        Account
+                    </span>
+                    </a>
+                 </li>
+                 <li>
+                     <a href="#" class="nav-cart">
+                         <img src="/assets/images/nav-cart.svg" alt="">
+                     </a>
+                 </li>
+              </ul>
+            </div>
+            <div class="nav-toggle">
+                <!-- <img src="/assets/image/logo/harmburger.svg" alt=""> -->
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <h3>Hi, Molly</h3>
+      <section>
+        <ul>
+            <li>
+                <div>
+                     <img src="/assets/images/dashboard/dashboard-cart.png" alt="">
+                </div>
+                <div class="detail-item" id="total">
+                   <p>Total Items</p>
+                   <span> 0 </span>
+                </div>
+            </li>
+            <li>
+              <div>
+                   <img src="/assets/images/dashboard/dashboard-check.png" alt="">
+              </div>
+              <div class="detail-item" id="delivered">
+                 <p>Delivered Items</p>
+                 <span> 0 </span>
+              </div>
+          </li>
+          <li>
+              <div>
+                   <img src="/assets/images/dashboard/dashboard-saved.png" alt="">
+              </div>
+              <div class="detail-item" id="delivered">
+                 <p>Saved Items</p>
+                 <span> 0 </span>
+              </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <aside class="track-order">
+             <p> Track Order</p>
+             <div class="track-progress">
+                <progress id="file" value="32" max="100"> 32% </progress>
+                <div class="progress-info">
+                    <span>Paid</span>
+                    <span>Transition</span>
+                    <span>Delivered</span>
+                </div>
+            </div>
+        </aside>
+        
+      </section>
+    </main>
+   <footer >
+    <section class="footer-top">
+     <div class="footer-logo">
+       <img src="/assets/images/footer-logo.png" alt="">
+     </div>
+     <ul class="footer-links">
+        <li>
+          <a href="/index.html">Home</a>
+        </li> 
+        <li>
+         <a href="#">Store</a>
+        </li>
+        <li>
+         <a href="/assets/pages/about.html">About Us</a>
+        </li>
+        <li>
+         <a href="/assets/pages/contact.html">Contact Us</a>
+        </li>
+     </ul>
+    </section>
+    <div class="copy-right">
+      <small>
+        copyright &copy; 2021 my essential foods
+      </small>
+      <ul class="footer-social">
+       <li>
+         <a href="#">
+             <img src="/assets/images/social/Vector-0.png" alt="">
+         </a>
+     </li>
+     <li>
+         <a href="#">
+             <img src="/assets/images/social/Vector-1.png" alt="">
+         </a>
+     </li>
+     <li>
+         <a href="#">
+             <img src="/assets/images/social/Vector-2.png" alt="">
+         </a>
+     </li>
+     <li >
+         <a href="#">
+             <img src="/assets/images/social/Vector-3.png" alt="">
+         </a>
+     </li>
+      </ul>
+    </div>
+</footer>
+<!-- <script src="/assets/script/jquery.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+<script src="/assets/script/index.js"></script>
+
+</body>
+</html>
