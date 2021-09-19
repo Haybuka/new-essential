@@ -36,6 +36,8 @@
             background-color: #E5E5E5;
             display: flex;
             justify-content: space-evenly;
+        transition: all 0.3s ease-in;
+
         }
         main li{
             display: flex;
@@ -44,6 +46,8 @@
             border: 1px solid #c4c4c4;
             padding: 20px 15px;
             width: 100%;
+        transition: all 0.3s ease-in;
+
         }
         main li .detail-item{
             text-align: center;
@@ -56,16 +60,20 @@
     main li span{
         font-size: 12px;
     }
+    .hidden{
+       display: none;
+    }
     .track-order p {
        position: relative;
        text-align: center;
        margin: 30px 0;
+       cursor: pointer;
     }
     .track-order p::after{
         content: url('/assets/images/dashboard/chevron-down.png');
         position: absolute;
         /* right:0 ; */
-        transform: translateX(-15px);
+        /* transform: translateX(-15px); */
         top: 0;
         width: 5%;
         height: 100%;
@@ -74,14 +82,56 @@
     .track-progress{
         width: 800px;
         margin: 10px auto;
+        border: 1px solid #C4C4C4;
+        border-radius: 15px;
+        padding: 20px 15px;
+        transition: all 0.3s ease-in;
     }
     .track-progress progress{
         width: 100%;
+        margin: 10px 0;
+        background-color: #E5E5E5;
+        border: none;
+        border-radius: 15px;
     }
     .progress-info{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+ 
+    progress[value]::-moz-progress-bar{
+        background-color: #FF0707;
+        border-radius: 15px;
+    }
+    .progress-info span{
+        color: #c4c4c4;
+    }
+    .status{
+        color: #FF0707;
+    }
+    main+aside{
+        text-align: center;
+    }
+    main+aside a{
+        text-decoration: none;
+        color:  #F10D0D;
+        display: block;
+        margin: 50px 0;
+    }
+    @media screen and (max-width:810px){
+        .track-order{
+            padding: 5px 15px;
+        }
+        .track-progress{
+            width: auto;
+        }
+        .progress-info span{
+            font-size: 14px;
+        }
+        main ul{
+            flex-direction: column;
+        }
     }
     </style>
 </head>
@@ -166,7 +216,7 @@
              <div class="track-progress">
                 <progress id="file" value="32" max="100"> 32% </progress>
                 <div class="progress-info">
-                    <span>Paid</span>
+                    <span class="status">Paid</span>
                     <span>Transition</span>
                     <span>Delivered</span>
                 </div>
@@ -175,6 +225,9 @@
         
       </section>
     </main>
+    <aside>
+        <a href="/assets/pages/login.html">Log out</a>
+    </aside>
    <footer >
     <section class="footer-top">
      <div class="footer-logo">
@@ -226,6 +279,12 @@
 <!-- <script src="/assets/script/jquery.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <script src="/assets/script/index.js"></script>
-
+<script>
+    let trackOrder = document.querySelector('.track-order p');
+    let trackProgress = document.querySelector('.track-progress');
+    trackOrder.addEventListener('click',()=>{
+         trackProgress.classList.toggle('hidden')
+    })
+</script>
 </body>
 </html>
