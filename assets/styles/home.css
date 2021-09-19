@@ -253,6 +253,11 @@ position:relative;
     left: 0;
     transform: translate(-5%,-1000%);
 }
+form h2+p{
+    font-size: 14px;
+    color: #7c776c;
+    margin: 20px 0;
+}
 .customer-review-heading {
     margin: 20px;
 }
@@ -519,6 +524,9 @@ footer a{
     .contain{
         width: auto;
         box-shadow: none;
+    }
+    .form{
+        padding:30px 20px;
     }
 }
 
