@@ -101,6 +101,9 @@
  progress{
      position: relative;
      display: inline-block;
+     -moz-appearance: none;
+     -webkit-appearance: none;
+     background-color: transparent;
      appearance: none;
      border-radius: 15px;
  }
@@ -109,7 +112,7 @@
      position: absolute;
      top: 0;
      left: 0;
-     background-color: #FF0707;
+     background-color: #EE6624;
      z-index: 10;
      display: inline-block;
      width: 32%;
@@ -119,8 +122,8 @@
     progress[value]::-moz-progress-bar,
     progress[value]::-webkit-progress-value,
     progress::-webkit-progress-value{
-        background-color: #FF0707;
-        color: #FF0707;
+        background-color: #EE6624;
+        color: #EE6624;
         border-radius: 15px;
     }
     .progress-info span{
